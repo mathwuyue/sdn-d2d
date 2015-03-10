@@ -1,0 +1,5 @@
+This program is modified from POX project: http://www.noxrepo.org/pox/about-pox/ .
+
+It combines applies the PyGMO to solve multi-object optimisation problem in multi-hop routing and uses PoX for network simulation.
+
+Build for the SDN research project of the Wireless Communications Group at The University of Sheffield.

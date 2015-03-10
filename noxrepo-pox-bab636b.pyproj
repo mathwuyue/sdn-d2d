@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f4b830b9-8964-41fc-918f-88a071c85866}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>pox.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>samples.pretty_log --DEBUG openflow.discovery misc.gephi_topo host_tracker forwarding.my_l3_learning</CommandLineArguments>
+    <InterpreterPath />
+    <InterpreterArguments />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Compile Include="debug-pox.py" />
+    <Compile Include="moo\chromosome.py" />
+    <Compile Include="moo\main.py" />
+    <Compile Include="moo\moo.py" />
+    <Compile Include="moo\my_algorithm.py" />
+    <Compile Include="moo\my_module.py" />
+    <Compile Include="moo\topo.py" />
+    <Compile Include="moo\__init__.py" />
+    <Compile Include="pox.py" />
+    <Compile Include="ext\skeleton.py" />
+    <Compile Include="pox\boot.py" />
+    <Compile Include="pox\core.py" />
+    <Compile Include="pox\forwarding\my_l3_learning.py" />
+    <Compile Include="pox\help.py" />
+    <Compile Include="pox\py.py" />
+    <Compile Include="pox\tk.py" />
+    <Compile Include="pox\__init__.py" />
+    <Compile Include="tests\skeleton_generator.py" />
+    <Compile Include="tests\__init__.py" />
+    <Compile Include="tools\pox-log.py" />
+    <Compile Include="tools\pox-pydoc.py" />
+    <Compile Include="tools\reindent-pox.py" />
+    <Compile Include="pox\datapaths\ctl.py" />
+    <Compile Include="pox\datapaths\nx_switch.py" />
+    <Compile Include="pox\datapaths\pcap_switch.py" />
+    <Compile Include="pox\datapaths\switch.py" />
+    <Compile Include="pox\datapaths\__init__.py" />
+    <Compile Include="pox\forwarding\hub.py" />
+    <Compile Include="pox\forwarding\l2_flowvisor.py" />
+    <Compile Include="pox\forwarding\l2_learning.py" />
+    <Compile Include="pox\forwarding\l2_multi.py" />
+    <Compile Include="pox\forwarding\l2_nx.py" />
+    <Compile Include="pox\forwarding\l2_nx_self_learning.py" />
+    <Compile Include="pox\forwarding\l2_pairs.py" />
+    <Compile Include="pox\forwarding\l3_learning.py" />
+    <Compile Include="pox\forwarding\topo_proactive.py" />
+    <Compile Include="pox\forwarding\__init__.py" />
+    <Compile Include="pox\host_tracker\host_tracker.py" />
+    <Compile Include="pox\host_tracker\__init__.py" />
+    <Compile Include="pox\info\debug_deadlock.py" />
+    <Compile Include="pox\info\packet_dump.py" />
+    <Compile Include="pox\info\recoco_spy.py" />
+    <Compile Include="pox\info\switch_info.py" />
+    <Compile Include="pox\info\__init__.py" />
+    <Content Include="moo\chromosome.pyc" />
+    <Content Include="moo\moo.pyc" />
+    <Content Include="moo\my_algorithm.pyc" />
+    <Content Include="moo\my_module.pyc" />
+    <Content Include="moo\topo.pyc" />
+    <Content Include="pox\lib\oui.txt" />
+    <Compile Include="pox\lib\addresses.py" />
+    <Compile Include="pox\lib\epoll_select.py" />
+    <Compile Include="pox\lib\mock_socket.py" />
+    <Compile Include="pox\lib\socketcapture.py" />
+    <Compile Include="pox\lib\threadpool.py" />
+    <Compile Include="pox\lib\util.py" />
+    <Compile Include="pox\lib\__init__.py" />
+    <Compile Include="pox\log\color.py" />
+    <Compile Include="pox\log\level.py" />
+    <Compile Include="pox\log\__init__.py" />
+    <Compile Include="pox\messenger\ajax_transport.py" />
+    <Compile Include="pox\messenger\example.py" />
+    <Compile Include="pox\messenger\log_service.py" />
+    <Compile Include="pox\messenger\tcp_transport.py" />
+    <Compile Include="pox\messenger\test_client.py" />
+    <Compile Include="pox\messenger\web_transport.py" />
+    <Compile Include="pox\messenger\__init__.py" />
+    <Compile Include="pox\misc\cbench.py" />
+    <Compile Include="pox\misc\full_payload.py" />
+    <Compile Include="pox\misc\gephi_topo.py" />
+    <Compile Include="pox\misc\ip_loadbalancer.py" />
+    <Compile Include="pox\misc\mac_blocker.py" />
+    <Compile Include="pox\misc\nat.py" />
+    <Compile Include="pox\misc\of_tutorial.py" />
+    <Compile Include="pox\misc\pidfile.py" />
+    <Compile Include="pox\misc\__init__.py" />
+    <Compile Include="pox\openflow\debug.py" />
+    <Compile Include="pox\openflow\discovery.py" />
+    <Compile Include="pox\openflow\flow_table.py" />
+    <Compile Include="pox\openflow\keepalive.py" />
+    <Compile Include="pox\openflow\libopenflow_01.py" />
+    <Compile Include="pox\openflow\nicira.py" />
+    <Compile Include="pox\openflow\nicira_ext.py" />
+    <Compile Include="pox\openflow\of_01.py" />
+    <Compile Include="pox\openflow\of_json.py" />
+    <Compile Include="pox\openflow\of_service.py" />
+    <Compile Include="pox\openflow\spanning_tree.py" />
+    <Compile Include="pox\openflow\topology.py" />
+    <Compile Include="pox\openflow\util.py" />
+    <Compile Include="pox\openflow\webservice.py" />
+    <Compile Include="pox\openflow\__init__.py" />
+    <Compile Include="pox\proto\arp_helper.py" />
+    <Compile Include="pox\proto\arp_responder.py" />
+    <Compile Include="pox\proto\dhcpd.py" />
+    <Compile Include="pox\proto\dhcp_client.py" />
+    <Compile Include="pox\proto\dns_spy.py" />
+    <Compile Include="pox\proto\pong.py" />
+    <Compile Include="pox\proto\__init__.py" />
+    <Compile Include="pox\samples\httopo.py" />
+    <Compile Include="pox\samples\mixed_switches.py" />
+    <Compile Include="pox\samples\pretty_log.py" />
+    <Compile Include="pox\samples\spanning_tree.py" />
+    <Compile Include="pox\samples\topo.py" />
+    <Compile Include="pox\samples\__init__.py" />
+    <Compile Include="pox\topology\topology.py" />
+    <Compile Include="pox\topology\__init__.py" />
+    <Compile Include="pox\web\jsonrpc.py" />
+    <Compile Include="pox\web\webcore.py" />
+    <Compile Include="pox\web\__init__.py" />
+    <Compile Include="pox\lib\graph\graph.py" />
+    <Compile Include="pox\lib\graph\minigraph.py" />
+    <Compile Include="pox\lib\graph\nom.py" />
+    <Compile Include="pox\lib\graph\__init__.py" />
+    <Compile Include="pox\lib\ioworker\notify_demo.py" />
+    <Compile Include="pox\lib\ioworker\workers.py" />
+    <Compile Include="pox\lib\ioworker\__init__.py" />
+    <Compile Include="pox\lib\packet\arp.py" />
+    <Compile Include="pox\lib\packet\dhcp.py" />
+    <Compile Include="pox\lib\packet\dns.py" />
+    <Compile Include="pox\lib\packet\eap.py" />
+    <Compile Include="pox\lib\packet\eapol.py" />
+    <Compile Include="pox\lib\packet\ethernet.py" />
+    <Compile Include="pox\lib\packet\icmp.py" />
+    <Compile Include="pox\lib\packet\icmpv6.py" />
+    <Compile Include="pox\lib\packet\igmp.py" />
+    <Compile Include="pox\lib\packet\ipv4.py" />
+    <Compile Include="pox\lib\packet\ipv6.py" />
+    <Compile Include="pox\lib\packet\llc.py" />
+    <Compile Include="pox\lib\packet\lldp.py" />
+    <Compile Include="pox\lib\packet\mpls.py" />
+    <Compile Include="pox\lib\packet\packet_base.py" />
+    <Compile Include="pox\lib\packet\packet_utils.py" />
+    <Compile Include="pox\lib\packet\rip.py" />
+    <Compile Include="pox\lib\packet\tcp.py" />
+    <Compile Include="pox\lib\packet\udp.py" />
+    <Compile Include="pox\lib\packet\vlan.py" />
+    <Compile Include="pox\lib\packet\__init__.py" />
+    <Compile Include="pox\lib\pxpcap\dump_trace.py" />
+    <Compile Include="pox\lib\pxpcap\parser.py" />
+    <Compile Include="pox\lib\pxpcap\strip_openflow.py" />
+    <Compile Include="pox\lib\pxpcap\writer.py" />
+    <Compile Include="pox\lib\pxpcap\__init__.py" />
+    <Compile Include="pox\lib\recoco\consumer.py" />
+    <Compile Include="pox\lib\recoco\events.py" />
+    <Compile Include="pox\lib\recoco\examples.py" />
+    <Compile Include="pox\lib\recoco\recoco.py" />
+    <Compile Include="pox\lib\recoco\__init__.py" />
+    <Compile Include="pox\lib\revent\revent.py" />
+    <Compile Include="pox\lib\revent\__init__.py" />
+    <Compile Include="pox\lib\pxpcap\pxpcap_c\setup.py" />
+    <Compile Include="pox\misc\telnetd\__init__.py" />
+    <Content Include="pox\web\www_root\index.html" />
+    <Content Include="pox\web\www_root\webmessenger.html" />
+    <Content Include="pox\web\www_root\webmessenger.js" />
+    <Compile Include="tests\unit\module_load_test.py" />
+    <Compile Include="tests\unit\__init__.py" />
+    <Compile Include="tests\unit\datapaths\switch_test.py" />
+    <Compile Include="tests\unit\datapaths\__init__.py" />
+    <Compile Include="tests\unit\lib\addresses_test.py" />
+    <Compile Include="tests\unit\lib\epoll_select_test.py" />
+    <Compile Include="tests\unit\lib\mock_socket_test.py" />
+    <Compile Include="tests\unit\lib\__init__.py" />
+    <Compile Include="tests\unit\openflow\flow_table_test.py" />
+    <Compile Include="tests\unit\openflow\libopenflow_01_test.py" />
+    <Compile Include="tests\unit\openflow\nicira_test.py" />
+    <Compile Include="tests\unit\openflow\topology_test.py" />
+    <Compile Include="tests\unit\openflow\__init__.py" />
+    <Compile Include="tests\unit\lib\ioworker\io_worker_test.py" />
+    <Compile Include="tests\unit\lib\ioworker\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ext" />
+    <Folder Include="moo\" />
+    <Folder Include="pox" />
+    <Folder Include="pox\datapaths" />
+    <Folder Include="pox\forwarding" />
+    <Folder Include="pox\host_tracker" />
+    <Folder Include="pox\info" />
+    <Folder Include="pox\lib" />
+    <Folder Include="pox\lib\graph" />
+    <Folder Include="pox\lib\ioworker" />
+    <Folder Include="pox\lib\packet" />
+    <Folder Include="pox\lib\pxpcap" />
+    <Folder Include="pox\lib\pxpcap\pxpcap_c" />
+    <Folder Include="pox\lib\recoco" />
+    <Folder Include="pox\lib\revent" />
+    <Folder Include="pox\log" />
+    <Folder Include="pox\messenger" />
+    <Folder Include="pox\misc" />
+    <Folder Include="pox\misc\telnetd" />
+    <Folder Include="pox\openflow" />
+    <Folder Include="pox\proto" />
+    <Folder Include="pox\samples" />
+    <Folder Include="pox\topology" />
+    <Folder Include="pox\web" />
+    <Folder Include="pox\web\www_root" />
+    <Folder Include="tests" />
+    <Folder Include="tests\unit" />
+    <Folder Include="tests\unit\datapaths" />
+    <Folder Include="tests\unit\lib" />
+    <Folder Include="tests\unit\lib\ioworker" />
+    <Folder Include="tests\unit\openflow" />
+    <Folder Include="tools" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

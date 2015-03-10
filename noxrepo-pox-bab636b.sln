@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "noxrepo-pox-bab636b", "noxrepo-pox-bab636b.pyproj", "{F4B830B9-8964-41FC-918F-88A071C85866}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "moo", "..\moo\moo.pyproj", "{38FD2ADA-9A6F-446B-B862-B0A2A1A88F17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4B830B9-8964-41FC-918F-88A071C85866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B830B9-8964-41FC-918F-88A071C85866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B830B9-8964-41FC-918F-88A071C85866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B830B9-8964-41FC-918F-88A071C85866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38FD2ADA-9A6F-446B-B862-B0A2A1A88F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38FD2ADA-9A6F-446B-B862-B0A2A1A88F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38FD2ADA-9A6F-446B-B862-B0A2A1A88F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38FD2ADA-9A6F-446B-B862-B0A2A1A88F17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal
